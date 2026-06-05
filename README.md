@@ -5,6 +5,9 @@ This project implements a fully autonomous robotic platform capable of enemy/obs
 The design was motivated by the challenge of building a reliable autonomous decision loop on a resource-constrained microcontroller (80 MHz, 80 KB RAM) while maintaining sub-100 ms sensor-to-actuator latency.
 
 System Architecture
+
+
+
 ┌─────────────────────────────────────────────────────┐
 │                    NodeMCU (ESP8266)                 │
 │  ┌─────────────┐    ┌──────────────────────────┐    │
@@ -25,6 +28,9 @@ System Architecture
 │  Drive Motors    Servo Motor    Wi-Fi TX (ESP)       │
 │  (L298N bridge)  (SG90)        (Wireless telemetry) │
 └─────────────────────────────────────────────────────┘
+
+
+
 
 Hardware Components
 ComponentModelPurposeMicrocontrollerNodeMCU ESP8266 (v3)Main compute + Wi-FiUltrasonic Sensor x2HC-SR04Forward detection + scanningServo MotorSG90Sensor sweep mountMotor DriverL298N H-BridgeDrive motor controlDC Motors x2TT Gear MotorDifferential drivePower Supply7.4V 2S LiPoMain power busVoltage RegulatorLM78055V logic rail
